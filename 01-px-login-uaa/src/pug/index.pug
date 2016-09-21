@@ -1,0 +1,25 @@
+doctype html
+
+html
+  head
+    meta(charset='utf-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    title
+      | Login
+    script(src='bower_components/px/dist/px.min.js')
+    script(src='bower_components/es6-promise/es6-promise.min.js')
+    script(src='bower_components/webcomponentsjs/webcomponents-lite.js')
+    link(rel='import' href='polymer-loader.vulcanized.html')
+  body.app(unresolved)
+    header(role='banner')
+      .viewport
+        h1.float--left Test
+    .viewport
+      .content-wrapper
+        px-app-nav.navbar(nav-items="{{App.tabs}}" path-prefix="/" path-key="state")
+          px-login.sticky
+        main.u-pt--.u-pr--.u-pl--(role="main")
+          section(role="region" ui-view)
+
+    footer.flex.flex--middle(role="contentinfo")
+      .viewport
