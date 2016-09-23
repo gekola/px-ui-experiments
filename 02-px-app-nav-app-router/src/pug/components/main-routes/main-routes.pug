@@ -1,0 +1,8 @@
+doctype html
+dom-module#main-routes
+  template
+    app-router
+      app-route(path="/" import="pages/index.html" template)
+      app-route(path="/dashboard" import="pages/dashboard.html" template)
+  script
+    | Polymer({is: 'main-routes'});
